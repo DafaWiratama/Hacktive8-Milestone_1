@@ -1,4 +1,0 @@
-numpy
-streamlite
-plotly
-plotly-express
