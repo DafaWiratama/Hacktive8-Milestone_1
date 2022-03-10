@@ -1,6 +1,4 @@
-import calendar
 from datetime import datetime
-from datetime import timedelta
 
 import pandas as pd
 import plotly.express as px

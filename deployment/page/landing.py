@@ -1,9 +1,5 @@
 import pandas as pd
 import streamlit as st
-import numpy as np
-import scipy.stats as stats
-import plotly.figure_factory as ff
-from matplotlib import pyplot as plt
 
 
 def landing_page(df: pd.DataFrame):

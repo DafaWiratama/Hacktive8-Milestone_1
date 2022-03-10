@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
-from page import *
-from page import insight
+
+from page.dashboard import dashboard_page
+from page.hypothesis_testing import hypothesis_testing_page
+from page.landing import landing_page
+from page.insight.insight_page import insight_page
 
 st.set_page_config(layout='wide')
 
@@ -39,7 +42,7 @@ def container(_df: pd.DataFrame):
     if selected_ui == "Dashboard":
         dashboard_page(_df)
     if selected_ui == "Insights":
-        insight.insight_page(_df)
+        insight_page(_df)
     if selected_ui == "Hypothesis Testing":
         hypothesis_testing_page(_df)
 
