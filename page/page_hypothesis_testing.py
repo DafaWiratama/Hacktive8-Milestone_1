@@ -130,8 +130,8 @@ def hypothesis_testing_page(df: pd.DataFrame):
       >> From the p-value, we can conclude that the null hypothesis is `{'Invalid' if p_value < alpha else 'Valid'}` with a probability of `{(1 - p_value) * 100:.1f}%`  
       >>  
       >> ### Summary  
-      >> We will **{'`Reject Null Hypothesis` because there are' if (p_value < alpha)
-    else '`Not Reject Null Hypothesis` because there are no'} significant difference between variable**
+      >> We will **{'`Reject Null Hypothesis` and `Accept Alternate Hypothesis` because there are' if (p_value < alpha)
+    else '`Not Reject Null Hypothesis` because there are no'} significant difference between sample**
       >> in other word we can say that `female` customer are statistically more likely to buy `Health and Beauty` product than `men` because they came from different distribution and from `Central Tendency Measurement` `Female` customer have higher average spending on `Health and Beauty` product, and soon the new targeted marketing
       >> campaign wi be started
       """)
