@@ -1,5 +1,4 @@
 numpy
 streamlite
-pyplot
 plotly
 plotly-express
