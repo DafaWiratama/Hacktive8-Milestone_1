@@ -1,0 +1,1 @@
+from .insight_page import insight_page
