@@ -132,5 +132,6 @@ def hypothesis_testing_page(df: pd.DataFrame):
       >> ### Summary  
       >> We will **{'`Reject Null Hypothesis` because there are' if (p_value < alpha)
     else '`Not Reject Null Hypothesis` because there are no'} significant difference between variable**
-      >> in other mean we can say that `female` customer are statistically more likely to buy `Health and Beauty` product that `men`, and soon the new targeted marketing campaign wi be started
+      >> in other word we can say that `female` customer are statistically more likely to buy `Health and Beauty` product than `men` because they came from different distribution and from `Central Tendency Measurement` `Female` customer have higher average spending on `Health and Beauty` product, and soon the new targeted marketing
+      >> campaign wi be started
       """)
