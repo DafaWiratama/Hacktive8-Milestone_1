@@ -1,6 +1,9 @@
 import pandas as pd
 import streamlit as st
 
+# Global Variables
+is_show_dataframe = False
+
 
 def landing_page(df: pd.DataFrame):
     global _df
@@ -8,7 +11,7 @@ def landing_page(df: pd.DataFrame):
     st.title("Milestone 1")
     st.markdown("""
         Hi, I'm an Data Scientist Trainee at **Hacktiv8**.  
-        My name is **Dafa Wiratama** from **Batch 09** under supervision of Buddy **Sardi Irfan**.
+        My name is **Dafa Wiratama** from **Batch 09** under supervision of Buddy **Sardi Irfansyah**.
         
         in this project, I will be using **Streamlit** to build a Data Science Dashboard that will help me to learn more about Data Science,
         and to share my Insight of the dataset
@@ -20,11 +23,17 @@ def landing_page(df: pd.DataFrame):
         ---
     """)
 
-    st.checkbox("Show Data", on_change=on_show_data_change, key="show_data")
+    # Callback Trigger
+    st.checkbox("Show Data", on_change=on_show_data_change, value=is_show_dataframe)
 
-
-def on_show_data_change():
-    global _df
-    if st.session_state.show_data:
-        st.subheader("Data")
+    if is_show_dataframe:
+        st.subheader("Dataset")
         st.dataframe(_df)
+
+
+# Callback Function
+# Side note :
+# I don't know why iam doing this but for the sake of assignment I'm doing this for rubric `implement streamlit callback`
+def on_show_data_change():
+    global is_show_dataframe
+    is_show_dataframe = not is_show_dataframe

@@ -16,7 +16,7 @@ opened_tab = None
 
 
 def plot_sub_article(df, x, y, color, title=None, body=None):
-    with st.expander(label=title):
+    with st.expander(label=title, expanded=True):
         col1, col2 = st.columns([2, 1])
         col1.plotly_chart(px.area(df, x=x, y=y, color="city", line_shape='spline'), use_container_width=True)
         col2.plotly_chart(px.box(df, x=color, y=y, color="city", points="all"), use_container_width=True)

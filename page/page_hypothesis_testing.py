@@ -33,28 +33,30 @@ def hypothesis_testing_page(df: pd.DataFrame):
         >> The alternative hypothesis is that the population mean is not equal to the value of the variable of interest.  
         >>  
         >> ## Background
-        >>> I am interested to increase the store performance.
-        >>> I have a hypothesis that the `female` customer more likely to purchase `Health and Beauty` than `male`. if my assumption are true i will start
-        >>> new marketing campaign targeted toward `Health and Beauty` on `female` customer
+        >>> I am interested to increase the store performance.  
+        >>> I have a hypothesis that the `female` customer more likely to purchase `Health and Beauty` than `male`.   
+        >>> if my assumption are true i will start new marketing campaign targeted toward `Health and Beauty` on `female` customer
         >>>
         >> ## Assumptions
-        >>> Both population is normally distributed.
-        >>> The population mean is known.
-        >>> The population standard deviation is known.
-        >>> Both Variables are independent of each because they are from the different populations.
+        >>> Both population is normally distributed.  
+        >>> The population mean is known.  
+        >>> The population standard deviation is known.  
+        >>> Both Variables are independent of each because they are from the different person.
         >>>
         >>> μ1 = `Male` Customer Spending on `Health and Beauty` Product  
         >>> μ2 = `Female` Customer Spending on `Health and Beauty` Product 
         >>>
-        >>> ### Null and Alternate Hypothesis  
+        >> ### Null and Alternate Hypothesis  
         >>> H0 : μ1 = μ2  
         >>> H1 : μ1 ≠ μ2
-        >>> ### Significance Level
+        >>>
+        >>> H0 : `Male` and `Female` Spending on `Health and Beauty` Product are the `same`   
+        >>> H1 : `Male` and `Female` Spending on `Health and Beauty` Product are `not same`
+        >>>
+        >> ### Significance Level
         >>> The significance level is the probability of observing the null hypothesis if the null hypothesis is true.  
         >>>  
         >>> α = {alpha:.2f}  
-        >>> ### Assumptions
-        >>> μ1 and μ2 are normally distributed.  
         > ## Test Statistic
         >> The test statistic is the difference between the population mean and the value of the variable of interest.  
         >> in this case i will be using T-test for two independent samples with 2-Tailed test.

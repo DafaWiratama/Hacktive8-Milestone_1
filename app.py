@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-from page.dashboard import dashboard_page
-from page.hypothesis_testing import hypothesis_testing_page
-from page.landing import landing_page
-from page.insight.insight_page import insight_page
+from page.page_dashboard import dashboard_page
+from page.page_hypothesis_testing import hypothesis_testing_page
+from page.page_landing import landing_page
+from page.page_insight import insight_page
 
 st.set_page_config(layout='wide')
 

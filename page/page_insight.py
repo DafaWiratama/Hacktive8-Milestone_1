@@ -1,8 +1,8 @@
 import pandas as pd
 import streamlit as st
-from .insight_sales import insight_sales
-from .insight_distribution import insight_distribution
-from .insight_store_performance import insight_store_performance
+from page.insight.insight_sales import insight_sales
+from page.insight.insight_distribution import insight_distribution
+from page.insight.insight_store_performance import insight_store_performance
 
 
 def insight_page(df: pd.DataFrame):
