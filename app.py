@@ -6,7 +6,10 @@ from page.page_hypothesis_testing import hypothesis_testing_page
 from page.page_landing import landing_page
 from page.page_insight import insight_page
 
-st.set_page_config(layout='wide')
+st.set_page_config(
+    page_title='Hacktive8 - Dafa Wiratama - Data Science - Batch 09',
+    page_icon="https://avatars.githubusercontent.com/u/43711291",
+    layout='wide', initial_sidebar_state='auto')
 
 
 @st.cache()
