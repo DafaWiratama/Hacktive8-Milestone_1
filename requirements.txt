@@ -3,4 +3,5 @@ streamlit
 plotly
 plotly-express
 pandas
+scikit_learn
 matplotlib
